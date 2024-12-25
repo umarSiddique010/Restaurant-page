@@ -1,0 +1,109 @@
+header {
+    height: min-content;
+    width: 100%;
+    padding: 15px;
+    background-color: #092635;
+    box-shadow: #092635e8 0 0 5px 0 ;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+ }
+ 
+ nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20%;
+ }
+ 
+  header nav ul{
+    height: 10%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+nav ul li{
+    height: 40px;
+    width: 100px;
+    margin: 0 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #EEEDEB;
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out ;
+}
+
+nav ul li:hover , nav ul li:focus{
+    color: #1B4242;
+    letter-spacing: 4px;
+    transform: scale(1.17);
+}
+
+.restaurant-logo {
+    height: 50px;
+    width: 50px;
+}
+
+nav button, nav button img{
+    height: 60px;
+    width: 60px;
+    background: none;
+    visibility: hidden;
+}
+
+
+
+
+
+@media (max-width:1214px) {
+
+    header {
+        height: min-content;
+        padding: 0;
+    }
+
+    .restaurant-logo {
+        height: 70px;
+        width: 70px;
+    }
+
+    nav button, nav button img{
+        visibility: visible;
+    }
+
+
+   header nav{
+    justify-content: space-between;
+    padding: 0 20px;
+    }
+
+    header nav ul {
+        position: fixed;
+        top: 5.5%;
+        bottom: 0;
+        left: 100%;
+        right: 0;
+        height: 100vh;
+        width: 100vw;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: #092635e7;
+        padding-top: 10%;
+        font-size: 1.9rem;
+        transition: all ease-in-out 0.5s;
+    }
+
+    .visibility {
+        left: 0;
+    }
+
+
+}
