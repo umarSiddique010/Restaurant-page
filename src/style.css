@@ -67,6 +67,10 @@ main, #root{
 }
 
 
-
+@media (max-width:350px){
+    .hero-quote {
+        font-size: 1.4rem;
+    }
+}
 
 
