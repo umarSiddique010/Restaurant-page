@@ -15,7 +15,7 @@ export default class HeroSection {
         const heroImg = this.helperMethods.createElement("img", heroImgSection, null, "hero-img")
         heroImg.src = HeroImage
         heroImg.alt = "View of Ocean view restaurant"
-        const heroQuote = this.helperMethods.createElement("p", this.parentNode, "Ocean View – where every bite tells a story, every flavor is a celebration, and every moment is enriched by breathtaking views.","hero-quote")
+        const heroQuote = this.helperMethods.createElement("p", heroImgSection, "Ocean View – where every bite tells a story, every flavor is a celebration, and every moment is enriched by breathtaking views.","hero-quote")
     
     }
 
